@@ -1,8 +1,5 @@
 function checkForMatchingBraces(string) {
     let pattern = /^(\{(?:[^}{]|\{(?:[^}{]|\{[^}{]*\})*\})*\})/g;
-    if(string === "" || string.match(pattern))
-        return true
-    else 
-        return false
+    return string === "" || string.match(pattern) ? true : false
 }
 module.exports = checkForMatchingBraces
